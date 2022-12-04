@@ -41,7 +41,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        container_name: php-7.2-fpm-alpine
+        container_name: php
         volumes:
             - ./src:/var/www/html
         ports:
