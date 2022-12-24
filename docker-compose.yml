@@ -5,12 +5,12 @@ networks:
 
 services:
     nginx:
-        image: nginx:stable-alpine
+        build:
+            context: ./nginx
+            dockerfile: Dockerfile
         container_name: nginx_for_laravel
         ports:
             - "80:80"
-        volumes:
-            - ./src:/var/www/html
         depends_on:
             - php
             - mysql
