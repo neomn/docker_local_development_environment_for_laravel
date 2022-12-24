@@ -5,8 +5,8 @@ networks:
 
 services:
     nginx:
-        image: nginx_for_laravel:stable-alpine
-        container_name: nginx
+        image: nginx:stable-alpine
+        container_name: nginx_for_laravel
         ports:
             - "8088:80"
         volumes:
