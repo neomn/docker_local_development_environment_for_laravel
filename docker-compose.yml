@@ -42,7 +42,7 @@ services:
             dockerfile: Dockerfile
         container_name: php
         volumes:
-            - ./src:/var/www/html
+            - /run/media/neo/Neo/projects/programming/web/laravel/docker_local_development_environment_for_laravel/src:/var/www/html
         ports:
             -   "9000:9000"
         networks:
