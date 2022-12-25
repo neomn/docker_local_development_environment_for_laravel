@@ -25,7 +25,7 @@ services:
         ports:
             - "9000:9000"
         volumes:
-            - $(pwd)/src:/var/www/html
+            - ./src:/var/www/html
         networks:
             - laravel
 
