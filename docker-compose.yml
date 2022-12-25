@@ -17,6 +17,18 @@ services:
         networks:
             - laravel
 
+    php:
+        build:
+            context: .
+            dockerfile: ./php/Dockerfile
+        container_name: php
+        ports:
+            - "9000:9000"
+        volumes:
+            - $(pwd)/src:/var/www/html
+        networks:
+            - laravel
+
 #    mysql:
 #        image: mysql:latest
 #        container_name: mysql
@@ -36,15 +48,6 @@ services:
 #        networks:
 #            - laravel
 
-    php:
-        build:
-            context: .
-            dockerfile: ./php/Dockerfile
-        container_name: php
-        ports:
-            -   "9000:9000"
-        networks:
-            - laravel
 
 #    composer:
 #        image: composer:latest
