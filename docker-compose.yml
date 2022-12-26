@@ -43,7 +43,7 @@ services:
             MYSQL_DATABASE: homestead
             MYSQL_USER: root
             MYSQL_PASSWORD: password
-            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_ROOT_PASSWORD: password
             SERVICE_TAG: dev
             SERVICE_NAME: mysql
         networks:
