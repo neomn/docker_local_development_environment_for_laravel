@@ -14,7 +14,7 @@ services:
             - ./src:/var/www/html
         depends_on:
             - php
-#            - mysql
+            - mysql
         networks:
             - laravel
 
@@ -36,7 +36,7 @@ services:
         restart: unless-stopped
         tty: true
         ports:
-            -   "4306:3306"
+            -   "3306:3306"
         volumes:
             - ./mysql:/var/lib/mysql
         environment:
@@ -48,7 +48,6 @@ services:
             SERVICE_NAME: mysql
         networks:
             - laravel
-
 
 #    composer:
 #        image: composer:latest
