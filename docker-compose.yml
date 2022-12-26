@@ -61,13 +61,13 @@ services:
 
     artisan:
         build:
-            context: .
+            context: ./php
             dockerfile: Dockerfile
         container_name: artisan
         volumes:
             - ./src:/var/www/html
-        depends_on:
-            - mysql
+#        depends_on:
+#            - mysql
         working_dir: /var/www/html
         entrypoint: ['/var/www/html/artisan']
         networks:
