@@ -30,24 +30,24 @@ services:
         networks:
             - laravel
 
-#    mysql:
-#        image: mysql:latest
-#        container_name: mysql
-#        restart: unless-stopped
-#        tty: true
-#        ports:
-#            -   "4306:3306"
-#        volumes:
-#            - ./mysql:/var/lib/mysql
-#        environment:
-#            MYSQL_DATABASE: homestead
-#            MYSQL_USER: homestead
-#            MYSQL_PASSWORD: secret
-#            MYSQL_ROOT_PASSWORD: secret
-#            SERVICE_TAG: dev
-#            SERVICE_NAME: mysql
-#        networks:
-#            - laravel
+    mysql:
+        image: mysql:latest
+        container_name: mysql
+        restart: unless-stopped
+        tty: true
+        ports:
+            -   "4306:3306"
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: homestead
+            MYSQL_USER: homestead
+            MYSQL_PASSWORD: secret
+            MYSQL_ROOT_PASSWORD: secret
+            SERVICE_TAG: dev
+            SERVICE_NAME: mysql
+        networks:
+            - laravel
 
 
 #    composer:
