@@ -1,5 +1,8 @@
 prepare:
 	#prepare docker images
-run:
+
+build:
     #run hole project
     #docker cp $(pwd)/nginx/default.conf
+run:
+	#run containers
