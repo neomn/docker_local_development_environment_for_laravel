@@ -6,3 +6,6 @@ build:
     #docker cp $(pwd)/nginx/default.conf
 run:
 	#run containers
+
+
+all: prepare build run
