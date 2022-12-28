@@ -5,7 +5,9 @@ networks:
 
 services:
     nginx:
-        image: nginx:stable-alpine
+        build:
+            context: ./nginx
+            dockerfile: Dockerfile
         container_name: nginx-for-laravel
         ports:
             - "80:80"
