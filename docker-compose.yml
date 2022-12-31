@@ -15,7 +15,7 @@ services:
             - ./src:/var/www/html
         depends_on:
             - php
-#            - mysql
+            - mysql
         networks:
             - laravel
 
