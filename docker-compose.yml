@@ -52,7 +52,7 @@ services:
 
 
     composer:
-        image: composer:latest
+        image: composer:2.5.1
         container_name: composer
         volumes:
             - ./src:/var/www/html
