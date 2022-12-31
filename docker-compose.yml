@@ -32,7 +32,7 @@ services:
             - laravel
 
     mysql:
-        image: mysql:latest
+        image: mysql:8.0.31
         container_name: mysql-for-laravel
         restart: unless-stopped
         tty: true
