@@ -42,7 +42,7 @@ services:
             - ./mysql:/var/lib/mysql
         environment:
             MYSQL_DATABASE: homestead
-            MYSQL_USER: root
+            MYSQL_USER: neo
             MYSQL_PASSWORD: password
             MYSQL_ROOT_PASSWORD: password
             SERVICE_TAG: dev
