@@ -39,7 +39,7 @@ services:
         ports:
             -   "5306:3306"
         volumes:
-            - ./mysql:/var/lib/mysql
+            - ./mysql/datadir:/var/lib/mysql
         environment:
             MYSQL_DATABASE: lara_auth
             MYSQL_USER: neo
