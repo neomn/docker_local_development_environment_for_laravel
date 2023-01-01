@@ -39,7 +39,7 @@ services:
         ports:
             -   "5306:3306"
         command:
-            -   mkdir /var/lib/mysql
+            -   makedir /var/lib/mysql
         volumes:
             - ./mysql/data:/var/lib/mysql
         environment:
