@@ -47,9 +47,6 @@ services:
             MYSQL_ROOT_PASSWORD: password
             SERVICE_TAG: dev
             SERVICE_NAME: mysql
-        depends_on:
-            - php
-            - composer
         networks:
             - laravel
 
