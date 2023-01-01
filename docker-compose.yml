@@ -38,8 +38,6 @@ services:
         tty: true
         ports:
             -   "5306:3306"
-        command:
-            -   makedir /var/lib/mysql
         volumes:
             - ./mysql/data:/var/lib/mysql
         environment:
