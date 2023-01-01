@@ -38,8 +38,8 @@ services:
         tty: true
         ports:
             -   "5306:3306"
-#        volumes:
-#            - ./mysql:/var/lib/mysql
+        volumes:
+            - ./mysql:/var/lib/mysql
         environment:
             MYSQL_DATABASE: lara_auth
             MYSQL_USER: neo
@@ -47,6 +47,9 @@ services:
             MYSQL_ROOT_PASSWORD: password
             SERVICE_TAG: dev
             SERVICE_NAME: mysql
+        depends_on:
+            - php
+            - composer
         networks:
             - laravel
 
