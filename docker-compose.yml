@@ -35,8 +35,12 @@ services:
         tty: true
         ports:
             -   "5306:3306"
+#        volumes:
+#            - ./mysql/db_auth_api:/var/lib/mysql
         volumes:
-            - ./mysql/db_auth_api:/var/lib/mysql
+            - type: bind
+              source: ./mysql/db_auth_api
+              target: /var/lib/mysql
         environment:
             MYSQL_DATABASE: auth_api
             MYSQL_USER: neo
