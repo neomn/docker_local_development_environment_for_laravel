@@ -35,8 +35,6 @@ services:
         tty: true
         ports:
             -   "5306:3306"
-        cap_add:
-            - ALL
         volumes:
             - ./mysql/db_auth_api:/var/lib/mysql
         environment:
