@@ -38,7 +38,7 @@ services:
         volumes:
             - ./mysql/data:/var/lib/mysql
         environment:
-            MYSQL_DATABASE: lara_auth
+            MYSQL_DATABASE: auth_api
             MYSQL_USER: neo
             MYSQL_PASSWORD: password
             MYSQL_ROOT_PASSWORD: password
